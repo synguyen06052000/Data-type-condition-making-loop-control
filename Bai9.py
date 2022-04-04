@@ -9,6 +9,9 @@ class PhanTichNgTo:
                 result = result/i
 if __name__=="__main__":
     N = (int)(input("Nhap so nguyen N: "))
-    problem = PhanTichNgTo(N)
-    print("So N phan tich ra thua so nguyen to:",end=" ")
-    problem.phanTich()
+    if N<=1:
+        print("Nhap lai! Phan tich so lon hon 1")
+    else:
+        problem = PhanTichNgTo(N)
+        print("So N phan tich ra thua so nguyen to:",end=" ")
+        problem.phanTich()
